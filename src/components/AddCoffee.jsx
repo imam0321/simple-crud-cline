@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const AddCoffee = () => {
@@ -44,6 +45,7 @@ const AddCoffee = () => {
   };
   return (
     <div className="bg-[#F4F3F0] p-24">
+      <Link to="/" className="btn btn-neutral">Home</Link>
       <h1 className="text-3xl font-bold">Add a Coffee</h1>
       <form onSubmit={handleAddCoffee}>
         <div className="md:flex mb-2">

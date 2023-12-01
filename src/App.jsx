@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
 import CoffeeCard from "./components/CoffeeCard";
@@ -9,7 +9,8 @@ function App() {
 
   return (
     <div className="m-20">
-      <h1 className="text-6xl my-20 text-center text-purple-500">
+      <Link to="/addCoffee" className="btn btn-neutral">Add Coffee</Link>
+      <h1 className="text-6xl my-10 text-center text-purple-500">
         Hot Hot Cold Coffees {coffees.length}
       </h1>
       <div className="grid md:grid-cols-2 gap-4">
